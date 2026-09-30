@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "posts/starting-points/index.html",
+    "href": "posts/starting-points/index.html",
+    "title": "What does intelligence engineering include?",
+    "section": "",
+    "text": "A capable model is not yet a capable system. Between a prompt and a dependable outcome sit choices about data, adaptation, retrieval, tools, evaluation and deployment.\nThis site uses intelligence engineering as an umbrella for those choices."
+  },
+  {
+    "objectID": "posts/starting-points/index.html#a-provisional-stack",
+    "href": "posts/starting-points/index.html#a-provisional-stack",
+    "title": "What does intelligence engineering include?",
+    "section": "A provisional stack",
+    "text": "A provisional stack\nA useful way to organise the territory is into six interacting layers:\n\nModels — capability, size, modality and licence.\nAdaptation — prompting, fine-tuning and preference optimisation.\nContext — retrieval, memory, knowledge graphs and tools.\nOrchestration — workflows, agents and decision policies.\nAssurance — evaluation, observability, provenance and safety.\nOperations — latency, cost, privacy and sovereign deployment.\n\nThe layers are not a maturity model. More machinery is not necessarily better. A small model with constrained outputs and a well-designed retrieval layer may outperform a much larger general model for a defined task.\n\n\n\n\n\n\nNoteWorking principle\n\n\n\nTreat model selection as one architectural decision among several—not as the architecture itself."
+  },
+  {
+    "objectID": "posts/starting-points/index.html#questions-worth-asking",
+    "href": "posts/starting-points/index.html#questions-worth-asking",
+    "title": "What does intelligence engineering include?",
+    "section": "Questions worth asking",
+    "text": "Questions worth asking\nWhen examining a new technique, I find these questions more useful than asking whether it is impressive:\n\nWhat decision or transformation is the system meant to support?\nWhere does its relevant knowledge come from?\nWhich claims can be traced to evidence?\nWhat happens when the evidence is incomplete or contradictory?\nWhat is the smallest sufficient model and architecture?\nHow will failure be detected outside a demonstration?\n\nFuture articles will test and revise this map. It is a starting point, not a settled taxonomy."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Intelligence Engineering",
+    "section": "",
+    "text": "BUILD · ADAPT · RETRIEVE · REASON · DECIDE\n\n\n\nClear, reproducible explorations of language models, retrieval, knowledge graphs and the systems forming around them.\n\nBrowse the articles About this project"
+  },
+  {
+    "objectID": "index.html#latest-writing",
+    "href": "index.html#latest-writing",
+    "title": "Intelligence Engineering",
+    "section": "Latest writing",
+    "text": "Latest writing"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Intelligence Engineering is a home for technical notes, experiments and practical explanations concerning contemporary machine intelligence.\nThe emphasis is not on chasing every new model release. It is on understanding the engineering choices that make models useful: adaptation, retrieval, evaluation, deployment, provenance and decision-making.\nTopics will include:"
+  },
+  {
+    "objectID": "about.html#a-note-on-the-articles",
+    "href": "about.html#a-note-on-the-articles",
+    "title": "About",
+    "section": "A note on the articles",
+    "text": "A note on the articles\nArticles may range from concise field notes to substantial, reproducible investigations. Dates show first publication; material changes should be recorded in an update note."
+  },
+  {
+    "objectID": "about.html#about-the-author",
+    "href": "about.html#about-the-author",
+    "title": "About",
+    "section": "About the author",
+    "text": "About the author\nI’m Martin Callaghan, an academic and technologist interested in the practical engineering of machine intelligence. My work explores small and sovereign models, retrieval, knowledge graphs, evaluation and the systems needed to use models responsibly and effectively.\nYou can find the source for this site on GitHub."
+  },
+  {
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "Articles",
+    "section": "",
+    "text": "Longer technical notes sit alongside compact field notes and reproducible experiments. Use the topic filters to find a useful thread.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSovereign models are an architectural choice\n\n\n\nSovereign AI\n\nSmall models\n\nArchitecture\n\n\n\nSovereignty is not a property supplied by downloading model weights.\n\n\n\n\n\n3 February 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhat does intelligence engineering include?\n\n\n\nField notes\n\nArchitecture\n\nEvaluation\n\n\n\nA working map of the choices between a model and a useful, trustworthy system.\n\n\n\n\n\n15 January 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/sovereign-models/index.html",
+    "href": "posts/sovereign-models/index.html",
+    "title": "Sovereign models are an architectural choice",
+    "section": "",
+    "text": "It is tempting to treat a locally hosted model as a sovereign model. Local inference matters, but sovereignty concerns control across the whole system: models, data, infrastructure, dependencies and operating knowledge."
+  },
+  {
+    "objectID": "posts/sovereign-models/index.html#think-in-dependencies",
+    "href": "posts/sovereign-models/index.html#think-in-dependencies",
+    "title": "Sovereign models are an architectural choice",
+    "section": "Think in dependencies",
+    "text": "Think in dependencies\nA useful assessment begins with a dependency map rather than a model leaderboard.\n\n\n\n\n\n\n\nLayer\nQuestions\n\n\n\n\nModel\nCan the weights and licence support the intended use?\n\n\nData\nWhere do training, retrieval and evaluation data reside?\n\n\nRuntime\nWhich proprietary services, drivers or accelerators are required?\n\n\nOperations\nCan the system be monitored, repaired and upgraded locally?\n\n\nGovernance\nWho can inspect its evidence, decisions and changes?\n\n\n\nA system may be locally deployed while remaining operationally dependent on opaque components. Conversely, a carefully governed hosted component might be compatible with an organisation’s actual sovereignty requirements."
+  },
+  {
+    "objectID": "posts/sovereign-models/index.html#sovereignty-is-contextual",
+    "href": "posts/sovereign-models/index.html#sovereignty-is-contextual",
+    "title": "Sovereign models are an architectural choice",
+    "section": "Sovereignty is contextual",
+    "text": "Sovereignty is contextual\nThere is no single threshold at which a system becomes sovereign. The relevant degree of control depends on the risk, jurisdiction, continuity requirements and sensitivity of the task.\n\n\n\n\n\n\nTipA more useful design question\n\n\n\nAsk which dependencies must remain under whose control—and what happens when each external dependency disappears.\n\n\nThis turns sovereignty from a slogan into a set of testable architectural requirements."
+  }
+]

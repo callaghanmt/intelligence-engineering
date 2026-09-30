@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/sovereign-models/index.html",
+      "/posts/starting-points/index.html"
+    ]
+  },
+  {
+    "listing": "/articles.html",
+    "items": [
+      "/posts/sovereign-models/index.html",
+      "/posts/starting-points/index.html"
+    ]
+  }
+]

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Intelligence Engineering</title>
+<link>https://callaghanmt.github.io/intelligence-engineering/</link>
+<atom:link href="https://callaghanmt.github.io/intelligence-engineering/index.xml" rel="self" type="application/rss+xml"/>
+<description>Technical notes on models that retrieve, reason and decide.</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Tue, 03 Feb 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Sovereign models are an architectural choice</title>
+  <dc:creator>Martin Callaghan</dc:creator>
+  <link>https://callaghanmt.github.io/intelligence-engineering/posts/sovereign-models/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>It is tempting to treat a locally hosted model as a sovereign model. Local inference matters, but sovereignty concerns control across the whole system: models, data, infrastructure, dependencies and operating knowledge.</p>
+<section id="think-in-dependencies" class="level2">
+<h2 class="anchored" data-anchor-id="think-in-dependencies">Think in dependencies</h2>
+<p>A useful assessment begins with a dependency map rather than a model leaderboard.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Questions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model</td>
+<td>Can the weights and licence support the intended use?</td>
+</tr>
+<tr class="even">
+<td>Data</td>
+<td>Where do training, retrieval and evaluation data reside?</td>
+</tr>
+<tr class="odd">
+<td>Runtime</td>
+<td>Which proprietary services, drivers or accelerators are required?</td>
+</tr>
+<tr class="even">
+<td>Operations</td>
+<td>Can the system be monitored, repaired and upgraded locally?</td>
+</tr>
+<tr class="odd">
+<td>Governance</td>
+<td>Who can inspect its evidence, decisions and changes?</td>
+</tr>
+</tbody>
+</table>
+<p>A system may be locally deployed while remaining operationally dependent on opaque components. Conversely, a carefully governed hosted component might be compatible with an organisation’s actual sovereignty requirements.</p>
+</section>
+<section id="sovereignty-is-contextual" class="level2">
+<h2 class="anchored" data-anchor-id="sovereignty-is-contextual">Sovereignty is contextual</h2>
+<p>There is no single threshold at which a system becomes sovereign. The relevant degree of control depends on the risk, jurisdiction, continuity requirements and sensitivity of the task.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="A more useful design question">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>A more useful design question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ask which dependencies must remain under whose control—and what happens when each external dependency disappears.</p>
+</div>
+</div>
+<p>This turns sovereignty from a slogan into a set of testable architectural requirements.</p>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>Sovereign AI</category>
+  <category>Small models</category>
+  <category>Architecture</category>
+  <guid>https://callaghanmt.github.io/intelligence-engineering/posts/sovereign-models/</guid>
+  <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://callaghanmt.github.io/intelligence-engineering/posts/sovereign-models/cover.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>What does intelligence engineering include?</title>
+  <dc:creator>Martin Callaghan</dc:creator>
+  <link>https://callaghanmt.github.io/intelligence-engineering/posts/starting-points/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>A capable model is not yet a capable system. Between a prompt and a dependable outcome sit choices about data, adaptation, retrieval, tools, evaluation and deployment.</p>
+<p>This site uses <strong>intelligence engineering</strong> as an umbrella for those choices.</p>
+<section id="a-provisional-stack" class="level2">
+<h2 class="anchored" data-anchor-id="a-provisional-stack">A provisional stack</h2>
+<p>A useful way to organise the territory is into six interacting layers:</p>
+<ol type="1">
+<li><strong>Models</strong> — capability, size, modality and licence.</li>
+<li><strong>Adaptation</strong> — prompting, fine-tuning and preference optimisation.</li>
+<li><strong>Context</strong> — retrieval, memory, knowledge graphs and tools.</li>
+<li><strong>Orchestration</strong> — workflows, agents and decision policies.</li>
+<li><strong>Assurance</strong> — evaluation, observability, provenance and safety.</li>
+<li><strong>Operations</strong> — latency, cost, privacy and sovereign deployment.</li>
+</ol>
+<p>The layers are not a maturity model. More machinery is not necessarily better. A small model with constrained outputs and a well-designed retrieval layer may outperform a much larger general model for a defined task.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Working principle">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Working principle
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Treat model selection as one architectural decision among several—not as the architecture itself.</p>
+</div>
+</div>
+</section>
+<section id="questions-worth-asking" class="level2">
+<h2 class="anchored" data-anchor-id="questions-worth-asking">Questions worth asking</h2>
+<p>When examining a new technique, I find these questions more useful than asking whether it is impressive:</p>
+<ul>
+<li>What decision or transformation is the system meant to support?</li>
+<li>Where does its relevant knowledge come from?</li>
+<li>Which claims can be traced to evidence?</li>
+<li>What happens when the evidence is incomplete or contradictory?</li>
+<li>What is the smallest sufficient model and architecture?</li>
+<li>How will failure be detected outside a demonstration?</li>
+</ul>
+<p>Future articles will test and revise this map. It is a starting point, not a settled taxonomy.</p>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>Field notes</category>
+  <category>Architecture</category>
+  <category>Evaluation</category>
+  <guid>https://callaghanmt.github.io/intelligence-engineering/posts/starting-points/</guid>
+  <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://callaghanmt.github.io/intelligence-engineering/posts/starting-points/cover.svg" medium="image" type="image/svg+xml"/>
+</item>
+</channel>
+</rss>
