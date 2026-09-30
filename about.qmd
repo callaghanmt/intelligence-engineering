@@ -1,11 +1,10 @@
 ---
 title: "About"
-description: "What Intelligence Engineering is for."
 ---
 
-**Intelligence Engineering** is a home for technical notes, experiments and practical explanations concerning contemporary machine intelligence.
+**Intelligence Engineering** is a home for technical notes, experiments and practical explanations about contemporary machine intelligence.
 
-The emphasis is not on chasing every new model release. It is on understanding the engineering choices that make models useful: adaptation, retrieval, evaluation, deployment, provenance and decision-making.
+The emphasis is not on following every new model release. It is on understanding the engineering choices that make models useful: adaptation, retrieval, evaluation, deployment, provenance and decision-making.
 
 Topics will include:
 
@@ -19,7 +18,7 @@ Topics will include:
 
 ## A note on the articles
 
-Articles may range from concise field notes to substantial, reproducible investigations. Dates show first publication; material changes should be recorded in an update note.
+Articles will range from concise technical notes to more substantial, reproducible investigations. Dates show first publication; material changes should be recorded in an update note.
 
 ## About the author
 
