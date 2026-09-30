@@ -1,0 +1,8 @@
+---
+title: "Page not found"
+page-layout: full
+---
+
+The requested page does not exist—or it has moved.
+
+[Return to Intelligence Engineering](index.qmd){.btn .btn-primary}

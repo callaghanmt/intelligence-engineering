@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Intelligence Engineering"
+  description: "Technical notes on models and systems that retrieve, reason and decide."
+  # Replace YOUR-USERNAME in the three URLs below.
+  site-url: "https://callaghanmt.github.io/intelligence-engineering/"
+  repo-url: "https://github.com/callaghanmt/intelligence-engineering"
+  repo-actions: [edit, issue]
+  favicon: assets/favicon.svg
+  open-graph: true
+  search: true
+  page-navigation: true
+  navbar:
+    logo: assets/logo.svg
+    left:
+      - href: index.qmd
+        text: Home
+      - href: articles.qmd
+        text: Articles
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: "https://github.com/callaghanmt/intelligence-engineering"
+        aria-label: GitHub
+      - icon: rss
+        href: index.xml
+        aria-label: RSS
+  page-footer:
+    left: "© 2026 Martin Callaghan"
+    right: "Built with [Quarto](https://quarto.org/)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [darkly, theme-dark.scss]
+    css: styles.css
+    toc: true
+    toc-location: right
+    anchor-sections: true
+    smooth-scroll: true
+    code-copy: true
+    code-fold: show
+    code-overflow: wrap
+    link-external-newwindow: true
+
+date-format: "D MMMM YYYY"
+
+execute:
+  freeze: auto

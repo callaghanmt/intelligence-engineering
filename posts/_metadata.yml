@@ -1,0 +1,10 @@
+# Defaults for everything beneath posts/
+author: "Your name"
+title-block-banner: false
+freeze: true
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-summary: "Show the code"
+    code-tools: true

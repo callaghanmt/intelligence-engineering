@@ -1,0 +1,35 @@
+---
+title: "Intelligence Engineering"
+subtitle: "Technical notes on models that retrieve, reason and decide."
+page-layout: full
+title-block-banner: false
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  grid-columns: 2
+  fields: [image, title, description, date, categories]
+  categories: true
+  feed:
+    title: "Intelligence Engineering"
+    description: "Technical notes on models that retrieve, reason and decide."
+    items: 20
+  page-size: 6
+---
+
+::: {.hero}
+::: {.hero-kicker}
+BUILD · ADAPT · RETRIEVE · REASON · DECIDE
+:::
+
+# Engineering useful intelligence
+
+Clear, reproducible explorations of language models, retrieval, knowledge graphs and the systems forming around them.
+
+::: {.hero-actions}
+[Browse the articles](articles.qmd){.btn .btn-primary .btn-lg}
+[About this project](about.qmd){.btn .btn-outline-secondary .btn-lg}
+:::
+:::
+
+## Latest writing

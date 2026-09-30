@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Intelligence Engineering mark">
+  <rect width="64" height="64" rx="16" fill="#0b725f"/>
+  <circle cx="21" cy="21" r="5" fill="#dff7ef"/>
+  <circle cx="43" cy="21" r="5" fill="#a9dfd0"/>
+  <circle cx="21" cy="43" r="5" fill="#76c6b2"/>
+  <circle cx="43" cy="43" r="5" fill="#f4fbf8"/>
+  <path d="M25 21h14M21 26v12M43 26v12M25 43h14M24.5 24.5l15 15M39.5 24.5l-15 15" stroke="#dff7ef" stroke-width="2.2" opacity=".72"/>
+</svg>

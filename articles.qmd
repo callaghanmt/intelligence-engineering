@@ -1,0 +1,15 @@
+---
+title: "Articles"
+description: "Notes, experiments and practical explainers."
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [image, title, description, date, categories]
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  page-size: 20
+---
+
+Longer technical notes sit alongside compact field notes and reproducible experiments. Use the topic filters to find a useful thread.

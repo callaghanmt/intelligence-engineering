@@ -1,0 +1,19 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, sans-serif;
+$headings-font-family: Georgia, "Times New Roman", serif;
+$body-bg: #101714;
+$body-color: #dce7e2;
+$headings-color: #f1f7f4;
+$link-color: #69d5ba;
+$primary: #69d5ba;
+$secondary: #9baca5;
+$navbar-bg: #101714;
+$navbar-fg: #edf7f3;
+$footer-bg: #151f1b;
+$border-color: #2a3b34;
+$code-bg: #18231f;
+
+/*-- scss:rules --*/
+.navbar {
+  border-bottom: 1px solid $border-color;
+}

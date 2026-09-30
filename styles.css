@@ -1,0 +1,142 @@
+/* Intelligence Engineering — shared presentation styles */
+
+:root {
+  --ie-green: #087f67;
+  --ie-mint: #dff4ed;
+  --ie-ink: #102c25;
+  --ie-rule: rgba(80, 110, 100, 0.22);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar-brand img {
+  max-height: 34px;
+  margin-right: 0.55rem;
+}
+
+.navbar-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 3.5rem;
+  padding: clamp(3rem, 8vw, 6.5rem) clamp(1.5rem, 7vw, 6rem);
+  border: 1px solid var(--ie-rule);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(32, 167, 135, 0.24), transparent 25%),
+    radial-gradient(circle at 75% 80%, rgba(77, 122, 179, 0.14), transparent 28%),
+    linear-gradient(135deg, rgba(8, 127, 103, 0.10), rgba(8, 127, 103, 0.015));
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 19rem;
+  height: 19rem;
+  right: -6rem;
+  bottom: -9rem;
+  border: 1px solid rgba(8, 127, 103, 0.25);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2.8rem rgba(8, 127, 103, 0.05), 0 0 0 5.6rem rgba(8, 127, 103, 0.035);
+  pointer-events: none;
+}
+
+.hero h1 {
+  max-width: 14ch;
+  margin: 0.3rem 0 1.15rem;
+  font-size: clamp(2.6rem, 7vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.hero > p {
+  max-width: 45rem;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.65;
+}
+
+.hero-kicker {
+  color: var(--ie-green);
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.8rem;
+}
+
+.btn {
+  border-radius: 999px;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin-top: 2.4rem;
+}
+
+.quarto-grid-item {
+  overflow: hidden;
+  border: 1px solid var(--ie-rule) !important;
+  border-radius: 0.85rem !important;
+  box-shadow: 0 8px 28px rgba(24, 55, 46, 0.055);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.quarto-grid-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(24, 55, 46, 0.1);
+}
+
+.quarto-grid-item .card-img-top {
+  aspect-ratio: 16 / 8.5;
+  object-fit: cover;
+}
+
+.listing-category {
+  border-radius: 999px !important;
+}
+
+.quarto-title-banner,
+.quarto-title-block {
+  margin-bottom: 2rem;
+}
+
+blockquote {
+  border-left-color: var(--ie-green);
+}
+
+.callout {
+  border-radius: 0.6rem;
+}
+
+.article-update {
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid var(--ie-green);
+  background: rgba(8, 127, 103, 0.07);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 2.7rem 1.3rem;
+    border-radius: 0.8rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+}

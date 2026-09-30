@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 638">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#112b40"/><stop offset="1" stop-color="#146b67"/></linearGradient></defs>
+  <rect width="1200" height="638" fill="url(#g)"/>
+  <g transform="translate(760 88)" fill="none" stroke="#c6f1e8" opacity=".65">
+    <rect x="0" y="0" width="300" height="300" rx="28" stroke-width="4"/>
+    <rect x="52" y="52" width="196" height="196" rx="20" stroke-width="3"/>
+    <circle cx="150" cy="150" r="46" stroke-width="3"/>
+    <g stroke-width="4"><path d="M75 300v70M150 300v70M225 300v70M75-70V0M150-70V0M225-70V0M-70 75H0M-70 150H0M-70 225H0M300 75h70M300 150h70M300 225h70"/></g>
+  </g>
+  <text x="80" y="105" fill="#d9f5ee" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="7">SYSTEMS · CONTROL · DEPENDENCIES</text>
+  <text x="80" y="490" fill="#fff" font-family="Georgia, serif" font-size="66">Sovereign models</text>
+  <text x="82" y="550" fill="#bce8df" font-family="Arial, sans-serif" font-size="30">An architectural choice</text>
+</svg>
