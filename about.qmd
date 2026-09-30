@@ -23,4 +23,11 @@ Articles may range from concise field notes to substantial, reproducible investi
 
 ## About the author
 
-Replace this section with a short biography, your interests and links to your other work.
+I’m Martin Callaghan, an academic and technologist interested in the
+practical engineering of machine intelligence. My work explores small and
+sovereign models, retrieval, knowledge graphs, evaluation and the systems
+needed to use models responsibly and effectively.
+
+You can find the source for this site on
+[GitHub](https://github.com/callaghanmt/intelligence-engineering).
+
