@@ -1,22 +1,18 @@
 # Intelligence Engineering
 
-A Quarto starter for publishing technical notes on models that retrieve, reason and decide.
+Technical notes and experiments on models and systems that retrieve,
+reason and decide.
 
-## 1. Personalise it
+Published at:
+https://callaghanmt.github.io/intelligence-engineering/
 
-In `_quarto.yml`, replace every occurrence of:
+## 1. Local development
 
-- `YOUR-USERNAME` with your GitHub username;
-- `Your name` with your name; and
-- `2026` in the footer if appropriate.
+Install [Quarto](https://quarto.org/docs/get-started/) and run:
 
-The starter assumes the repository is named `intelligence-engineering`, giving this URL:
-
-```text
-https://YOUR-USERNAME.github.io/intelligence-engineering/
+```bash
+quarto preview
 ```
-
-If you choose another repository name, update both `site-url` and `repo-url`.
 
 ## 2. Preview locally
 
